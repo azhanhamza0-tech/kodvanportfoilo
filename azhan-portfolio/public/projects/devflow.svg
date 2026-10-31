@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E1322"/>
+      <stop offset="100%" stop-color="#08090F"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="798" height="498" rx="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="680" cy="80" r="140" fill="#6366F1" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="120" cy="420" r="160" fill="#06B6D4" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Top App Bar -->
+  <rect x="30" y="30" width="740" height="48" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="56" cy="54" r="5" fill="#EF4444" opacity="0.8"/>
+  <circle cx="72" cy="54" r="5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="88" cy="54" r="5" fill="#10B981" opacity="0.8"/>
+  <text x="120" y="59" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">DevFlow Workspace — Sprint Board</text>
+  <rect x="640" y="42" width="110" height="24" rx="6" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)"/>
+  <text x="662" y="58" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="11" font-weight="500">+ New Task</text>
+
+  <!-- Kanban Column 1: In Progress -->
+  <rect x="30" y="100" width="230" height="360" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="46" y="128" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">IN PROGRESS</text>
+  <rect x="150" y="117" width="22" height="16" rx="8" fill="rgba(99,102,241,0.2)"/>
+  <text x="158" y="129" fill="#818CF8" font-family="system-ui, sans-serif" font-size="10">2</text>
+
+  <!-- Card 1 -->
+  <rect x="44" y="146" width="202" height="110" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="56" y="160" width="60" height="16" rx="4" fill="rgba(139,92,246,0.2)"/>
+  <text x="64" y="172" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="9" font-weight="600">FRONTEND</text>
+  <text x="56" y="196" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Refactor State Machine</text>
+  <text x="56" y="214" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Hooks &amp; atomic dispatchers</text>
+  <circle cx="64" cy="238" r="8" fill="#6366F1"/>
+  <rect x="180" y="230" width="54" height="16" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <text x="188" y="242" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="9">HIGH</text>
+
+  <!-- Card 2 -->
+  <rect x="44" y="270" width="202" height="96" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="56" y="284" width="50" height="16" rx="4" fill="rgba(6,182,212,0.2)"/>
+  <text x="64" y="296" fill="#67E8F9" font-family="system-ui, sans-serif" font-size="9" font-weight="600">UI / UX</text>
+  <text x="56" y="320" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Accessible Focus Rings</text>
+  <text x="56" y="338" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">WCAG 2.1 AA compliance</text>
+
+  <!-- Kanban Column 2: Code Review -->
+  <rect x="285" y="100" width="230" height="360" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="301" y="128" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">CODE REVIEW</text>
+  <rect x="408" y="117" width="22" height="16" rx="8" fill="rgba(16,185,129,0.2)"/>
+  <text x="416" y="129" fill="#34D399" font-family="system-ui, sans-serif" font-size="10">1</text>
+
+  <rect x="299" y="146" width="202" height="120" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(99,102,241,0.3)"/>
+  <rect x="311" y="160" width="70" height="16" rx="4" fill="rgba(59,130,246,0.2)"/>
+  <text x="319" y="172" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="9" font-weight="600">TYPESCRIPT</text>
+  <text x="311" y="196" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Strict Discriminated Unions</text>
+  <text x="311" y="214" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Eliminate any castings in store</text>
+  <rect x="311" y="234" width="178" height="20" rx="4" fill="rgba(16,185,129,0.1)"/>
+  <text x="325" y="248" fill="#34D399" font-family="system-ui, sans-serif" font-size="9" font-weight="600">✓ All 14 tests passing</text>
+
+  <!-- Kanban Column 3: Done -->
+  <rect x="540" y="100" width="230" height="360" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="556" y="128" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">COMPLETED</text>
+
+  <rect x="554" y="146" width="202" height="85" rx="8" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="566" y="176" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Persistent LocalStorage Sync</text>
+  <text x="566" y="194" fill="#64748B" font-family="system-ui, sans-serif" font-size="10">Auto-save on action dispatch</text>
+  <text x="566" y="214" fill="#10B981" font-family="system-ui, sans-serif" font-size="10">● Deployed</text>
+</svg>

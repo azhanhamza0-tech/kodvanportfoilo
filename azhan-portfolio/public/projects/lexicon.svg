@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#11101E"/>
+      <stop offset="100%" stop-color="#08080F"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#bg2)"/>
+  <rect x="1" y="1" width="798" height="498" rx="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <circle cx="700" cy="400" r="160" fill="#8B5CF6" opacity="0.12" filter="url(#glow2)"/>
+  <circle cx="100" cy="100" r="140" fill="#EC4899" opacity="0.08" filter="url(#glow2)"/>
+
+  <!-- Top Search Bar -->
+  <rect x="50" y="36" width="700" height="54" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="80" y="68" fill="#64748B" font-family="system-ui, sans-serif" font-size="14">🔍 Search Kurdish terminology, roots, or English translations...</text>
+  <rect x="650" y="46" width="84" height="34" rx="8" fill="rgba(139,92,246,0.25)" stroke="rgba(139,92,246,0.5)"/>
+  <text x="668" y="68" fill="#DDD6FE" font-family="system-ui, sans-serif" font-size="12" font-weight="600">RTL / LTR</text>
+
+  <!-- Typography Card (Featured) -->
+  <rect x="50" y="114" width="700" height="200" rx="14" fill="rgba(255,255,255,0.025)" stroke="rgba(255,255,255,0.06)"/>
+  <rect x="74" y="134" width="90" height="22" rx="6" fill="rgba(236,72,153,0.2)"/>
+  <text x="86" y="149" fill="#F472B6" font-family="system-ui, sans-serif" font-size="10" font-weight="700">کوردیی سۆرانی</text>
+
+  <text x="74" y="200" fill="#F8FAFC" font-family="'Vazirmatn', system-ui, sans-serif" font-size="28" font-weight="700">تایپۆگرافی و ڕووکاری وێبی مۆدێرن</text>
+  <text x="74" y="235" fill="#94A3B8" font-family="'Vazirmatn', system-ui, sans-serif" font-size="15">ڕێکخستنی دەق و زاراوەسازیی تەکنیکی بە شێوازێکی زانستی و پێوانەیی بۆ گەشەپێدەرانی وێب.</text>
+  <text x="74" y="280" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="13">English: Modern Web Typography &amp; Standardized Kurdish Terminology</text>
+
+  <!-- Dual Comparison Cards -->
+  <rect x="50" y="334" width="335" height="130" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="70" y="362" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">State Machine — دۆخی بەرنامە</text>
+  <text x="70" y="390" fill="#64748B" font-family="'Vazirmatn', system-ui, sans-serif" font-size="12">سیستەمی بەڕێوەبردنی گۆڕانکارییەکانی داتا لە کاتی کارکردندا بە شێوەیەکی پێشبینیکراو.</text>
+  <rect x="70" y="420" width="70" height="20" rx="4" fill="rgba(16,185,129,0.15)"/>
+  <text x="80" y="434" fill="#34D399" font-family="system-ui, sans-serif" font-size="10">Verified</text>
+
+  <rect x="415" y="334" width="335" height="130" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="435" y="362" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Accessibility — دەستڕاگەیشتوویی</text>
+  <text x="435" y="390" fill="#64748B" font-family="'Vazirmatn', system-ui, sans-serif" font-size="12">دابینکردنی مافی بەکارهێنان بۆ هەموو تاکەکان بەبێ جیاوازی لە ڕێگەی ستانداردەکانەوە.</text>
+  <rect x="435" y="420" width="70" height="20" rx="4" fill="rgba(99,102,241,0.15)"/>
+  <text x="445" y="434" fill="#818CF8" font-family="system-ui, sans-serif" font-size="10">WCAG 2.1</text>
+</svg>
